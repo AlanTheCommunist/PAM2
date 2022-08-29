@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         myButtonListenerMethod();
+        ConstraintLayout bgElement = (ConstraintLayout) findViewById(R.id.bgElement);
+        bgElement.setBackgroundColor(Color.RED);
     }
     public void myButtonListenerMethod() {
         final Button button = (Button) findViewById(R.id.mybutton);
@@ -30,4 +32,3 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-
